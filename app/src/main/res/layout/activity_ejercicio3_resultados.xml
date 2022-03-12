@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejercicio3Resultados">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F4F4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/etiquetaTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="20dp"
+            android:background="#dad2d8"
+            android:text="@string/etiquetaResultados"
+            android:layout_marginHorizontal="20dp"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#14213D"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/etiquetaBonos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text=" "
+            android:textAlignment="center"
+            android:textColor="#91171F"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--    Tabla para 1er empleado   -->
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#3a506b">
+
+                        <TextView
+                            android:id="@+id/etiquetaEmpleado1"
+                            android:layout_weight=".5"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaEmpleado1"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaCargo"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaCargoE1"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_weight=".5"
+                            android:background="#CFD7C7"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaDescuentos"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaISSS"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaISSSE1"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaAFP"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaAFPE1"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaRenta"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaRentaE1"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="Sueldo total"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaSueldoTotalE1"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <!--    Tabla para 2do empleado   -->
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#3a506b">
+
+                        <TextView
+                            android:id="@+id/etiquetaEmpleado2"
+                            android:layout_weight=".5"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaEmpleado2"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaCargo"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaCargoE2"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_weight=".5"
+                            android:background="#CFD7C7"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaDescuentos"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaISSS"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaISSSE2"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaAFP"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaAFPE2"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaRenta"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaRentaE2"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="Sueldo total"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaSueldoTotalE2"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <!--    Tabla para 3er empleado   -->
+
+                <!--    Comparaciones    -->
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#3a506b">
+
+                        <TextView
+                            android:id="@+id/etiquetaEmpleado3"
+                            android:layout_weight=".5"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaEmpleado3"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaCargo"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaCargoE3"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_weight=".5"
+                            android:background="#CFD7C7"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaDescuentos"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaISSS"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaISSSE3"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaAFP"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaAFPE3"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaRenta"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaRentaE3"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="Sueldo total"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaSueldoTotalE3"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#128675">
+
+                        <TextView
+                            android:layout_weight=".5"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaCoparaciones"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaMayor"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaMayorSueldo"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaMenor"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaMenorSueldo"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/etiquetaMas"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/etiquetaCantidad"
+                            android:layout_column="2"
+                            android:layout_gravity="left"
+                            android:padding="3dip"
+                            android:text="X"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#000000"
+                        android:drawableLeft="?attr/homeAsUpIndicator"
+                        android:drawableTint="#FFFFFF"
+                        android:onClick="pantallaMenu"
+                        android:text="@string/btnMenu"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnRegresar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#143642"
+                        android:drawableLeft="@android:drawable/ic_menu_send"
+                        android:drawableTint="#cac4ce"
+                        android:onClick="pantallaEjercicio3"
+                        android:text="@string/btnRegresar"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

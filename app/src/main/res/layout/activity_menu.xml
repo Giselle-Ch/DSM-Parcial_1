@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F4F4"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="@string/btnMenu"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#14213D"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#ec9a29"
+            android:drawableLeft="@android:drawable/ic_menu_send"
+            android:drawableTint="#143642"
+            android:onClick="pantallaEjercicio1"
+            android:text="@string/btnEjercicio1"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#857C8C"
+            android:drawableLeft="@android:drawable/ic_menu_send"
+            android:drawableTint="#ec9a29"
+            android:onClick="pantallaEjercicio2"
+            android:text="@string/btnEjercicio2"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#143642"
+            android:drawableLeft="@android:drawable/ic_menu_send"
+            android:drawableTint="#cac4ce"
+            android:onClick="pantallaEjercicio3"
+            android:text="@string/btnEjercicio3"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#000000"
+            android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+            android:drawableTint="#FFFFFF"
+            android:onClick="cerrarSesion"
+            android:text="@string/btnSalir"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

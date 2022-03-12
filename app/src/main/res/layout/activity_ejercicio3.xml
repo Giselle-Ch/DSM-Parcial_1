@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejercicio3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F4F4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/etiquetaTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="30dp"
+            android:background="#dad2d8"
+            android:text="@string/etiquetaTiulo3"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#14213D"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--    Campos para Empleado 1      -->
+
+                <TextView
+                    android:id="@+id/etiquetaEmpleado1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/etiquetaEmpleado1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#3A506B"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="20dp">
+
+                    <EditText
+                        android:id="@+id/inputNombreE1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#6c757d"
+                        android:ems="10"
+                        android:hint="@string/hintNombre"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#6C757D" />
+
+                    <EditText
+                        android:id="@+id/inputApellidoE1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#6c757d"
+                        android:ems="10"
+                        android:hint="@string/hintApellido"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#6C757D" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerE1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="4"
+                        android:backgroundTint="#000000"
+                        android:foregroundTint="#6c757d" />
+
+                    <EditText
+                        android:id="@+id/inputHorasE1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#6c757d"
+                        android:ems="10"
+                        android:hint="@string/hintHoras"
+                        android:inputType="number"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#6C757D" />
+                </LinearLayout>
+
+                <!--    Campos para Empleado 2      -->
+
+                <TextView
+                    android:id="@+id/etiquetaEmpleado2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/etiquetaEmpleado2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#3A506B"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="20dp">
+
+                    <EditText
+                        android:id="@+id/inputNombreE2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#6C757D"
+                        android:ems="10"
+                        android:hint="@string/hintNombre"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#6C757D" />
+
+                    <EditText
+                        android:id="@+id/inputApellidoE2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#6C757D"
+                        android:ems="10"
+                        android:hint="@string/hintApellido"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#6c757d" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerE2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="4"
+                        android:backgroundTint="#6c757d" />
+
+                    <EditText
+                        android:id="@+id/inputHorasE2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#6C757D"
+                        android:ems="10"
+                        android:hint="@string/hintHoras"
+                        android:inputType="number"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#6c757d" />
+                </LinearLayout>
+
+                <!--    Campos para Empleado 3      -->
+
+                <TextView
+                    android:id="@+id/etiquetaEmpleado3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/etiquetaEmpleado3"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#3A506B"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="20dp">
+
+                    <EditText
+                        android:id="@+id/inputNombreE3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#6c757d"
+                        android:ems="10"
+                        android:hint="@string/hintNombre"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#6c757d" />
+
+                    <EditText
+                        android:id="@+id/inputApellidoE3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#6c757d"
+                        android:ems="10"
+                        android:hint="@string/hintApellido"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#6C757D" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerE3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="4"
+                        android:backgroundTint="#6c757d" />
+
+                    <EditText
+                        android:id="@+id/inputHorasE3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#6c757d"
+                        android:ems="10"
+                        android:hint="@string/hintHoras"
+                        android:inputType="number"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#6C757D" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnRegresar"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#000000"
+                        android:drawableLeft="?attr/homeAsUpIndicator"
+                        android:drawableTint="#FFFFFF"
+                        android:onClick="pantallaMenu"
+                        android:text="@string/btnMenu"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnResultados"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#143642"
+                        android:onClick="pantallaResultados"
+                        android:text="@string/btnCalcularSueldos"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

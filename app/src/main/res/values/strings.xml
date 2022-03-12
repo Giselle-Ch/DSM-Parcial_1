@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Parcial 1</string>
+
+    <string name="btnRegresar">Regresar</string>
+    <string name="etiquetaResultados">Resultados</string>
+
+    <!--        Login        -->
+    <string name="etiquetaBienvenido">Bienvenido</string>
+    <string name="hintUsuario">Usuario</string>
+    <string name="hintContrasena">Contraseña</string>
+    <string name="btnIniciarSesion">Iniciar Sesión</string>
+    <string name="btnRegistrate">Registrate</string>
+    <string name="etiquetaCuenta">¿No tienes una cuenta?</string>
+
+    <!--        Registro     -->
+    <string name="etiquetaRegistro">Nuevo usuario</string>
+    <string name="hintReContrasena">Confirmar contraseña</string>
+    <string name="btnRegistrar">Registrarse</string>
+    <string name="btnCancelar">Cancelar</string>
+
+    <!--        Menu        -->
+    <string name="btnEjercicio1">Función cuadrática</string>
+    <string name="btnEjercicio2">Contador de votos</string>
+    <string name="btnEjercicio3">Sueldos de empleados</string>
+    <string name="btnSalir">Cerrar Sesión</string>
+
+    <!--    Ejercicio 1     -->
+    <string name="etiquetaTitulo1">Función Cuadrática</string>
+    <string name="btnCalcular">Calcular</string>
+
+    <!--    Ejercicio 2     -->
+    <string name="etiquetaTitulo2">Conteo de votos</string>
+    <string name="etiquetaCandidatos">Ingrese los candidatos</string>
+    <string name="etiquetaVotos">Ingrese la lista de votos</string>
+    <string name="hintCandidatos">Separar candidatos con coma</string>
+    <string name="hintVotos">Separar votos con coma</string>
+
+    <!--    Ejercicio 3     -->
+    <string name="etiquetaTitulo3">Ingreso de datos</string>
+    <string name="hintNombre">Nombre</string>
+    <string name="hintApellido">Apellido</string>
+    <string name="hintHoras">Horas</string>
+    <string name="etiquetaDescuentos">Descuentos</string>
+    <string name="etiquetaTiulo3">Ingreso de datos</string>
+    <string name="etiquetaEmpleado1">Empleado 1</string>
+    <string name="etiquetaEmpleado2">Empleado 2</string>
+    <string name="etiquetaEmpleado3">Empleado 3</string>
+    <string name="etiquetaCoparaciones">Comparaciones</string>
+    <string name="etiquetaISSS">ISSS</string>
+    <string name="etiquetaAFP">AFP</string>
+    <string name="etiquetaRenta">Renta</string>
+    <string name="etiquetaCargo">Cargo</string>
+    <string name="etiquetaMayor">Mayor Salario</string>
+    <string name="etiquetaMenor">Menor Salario</string>
+    <string name="etiquetaMas">Cantidad más de $300</string>
+    <string name="btnCalcularSueldos">Calcular sueldos</string>
+    <string name="btnMenu">Menú</string>
+</resources>
